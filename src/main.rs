@@ -55,7 +55,7 @@ fn main() {
     // Escribe el archivo de salida.
     // Writes the output file.
     match std::fs::write(&output_path, &*webp) {
-        Ok(_) => println!("Archivo escrito con éxito."),
-        Err(e) => eprintln!("Ocurrió un error al escribir el archivo: {}", e),
+        Ok(_) => println!("Success Write file."),
+        Err(e) => eprintln!("Sorry! an error has ocurred: {}", e),
     }
 }
